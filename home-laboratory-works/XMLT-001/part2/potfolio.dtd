@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!ELEMENT portfolio (competencies+) >
+<!ELEMENT competencies ( (language | framework | cms)*) >
+<!ELEMENT framework (knowledge+) >
+<!ELEMENT language (knowledge+) >
+<!ELEMENT cms (knowledge+) >
+<!ELEMENT knowledge (#PCDATA) >
+
+<!ATTLIST competencies type CDATA #REQUIRED>
+<!ATTLIST language lang CDATA #REQUIRED>
+<!ATTLIST framework fram CDATA #REQUIRED>
+<!ATTLIST cms cms CDATA #REQUIRED>
+<!ATTLIST knowledge comment CDATA #REQUIRED>

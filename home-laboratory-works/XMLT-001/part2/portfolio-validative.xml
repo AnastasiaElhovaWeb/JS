@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE portfolio [
+  <!ELEMENT portfolio (competencies+) >
+  <!ELEMENT competencies ( (language | framework | cms)*) >
+  <!ELEMENT framework (knowledge+) >
+  <!ELEMENT language (knowledge+) >
+  <!ELEMENT cms (knowledge+) >
+  <!ELEMENT knowledge (#PCDATA) >
+
+  <!ATTLIST competencies type CDATA #REQUIRED>
+  <!ATTLIST language lang CDATA #REQUIRED>
+  <!ATTLIST framework fram CDATA #REQUIRED>
+  <!ATTLIST cms cms CDATA #REQUIRED>
+  <!ATTLIST knowledge comment CDATA #REQUIRED>
+]>
+
+<portfolio>
+  <competencies type = "language">
+    <language lang = "PHP">
+      <knowledge comment="базовые знания">4</knowledge>
+    </language>
+    <language lang = "HTML">
+      <knowledge comment="базовые знания HTML5">4</knowledge>
+    </language>
+    <language lang = "CSS">
+      <knowledge comment="адаптивная, но не особо кроссбраузерная верстка">3</knowledge>
+    </language>
+    <language lang = "JS">
+      <knowledge comment="в процессе изучения">2</knowledge>
+    </language>
+    <language lang = "SQL">
+      <knowledge comment="умения писать основные вопросы">2</knowledge>
+    </language>
+  </competencies>
+  <competencies type = "framework">
+    <framework fram="Bootstrap">
+      <knowledge comment="в процессе изучения Bootstrap4">4</knowledge>
+    </framework>
+    <framework fram="JQuery">
+      <knowledge comment="в процессе изучения параллельно JS">2</knowledge>
+    </framework>
+  </competencies>
+  <competencies type = "cms">
+    <cms cms="Wordpress">
+      <knowledge comment="сейчас основная CMS, в процессе изучения">3</knowledge>
+    </cms>
+    <cms cms="October">
+      <knowledge comment="забывающаяся CMS">3</knowledge>
+    </cms>
+    <cms cms="Joomla">
+      <knowledge comment="ужасная CMS!">1</knowledge>
+    </cms>
+  </competencies>
+</portfolio>
